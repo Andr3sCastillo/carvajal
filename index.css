@@ -118,18 +118,34 @@ button{
     margin: 20px 20px 5px 20px;
 }
 .card-flag{
-    width: 20px;
-    height: 130px;
-    position:absolute;
-    background-color: aqua;
-    cursor: pointer;
+    width: 30px;
+    height: 100px;
+    align-self: center;
+    opacity: 80%;
+    position: absolute;
+    top: 390px;
+    left: -15px;
+}
+.card-flag-right{
+    width: 30px;
+    height: 100px;
+    align-self: center;
+    opacity: 80%;
+    position: absolute;
+    top: 390px;
+    right: 15px ;
+}
+.card-arrow-left{
+    width: 50px;
+    height: 50px;
 }
 .card-container{
-    width: 100%;
+    width: 95%;
     height: 200px;
     display: inline-flex;
     overflow: auto;
     white-space: nowrap;
+    margin: 5px 0px 0px 10px;
 }
 .card{
     color: white;
@@ -145,6 +161,34 @@ button{
     width: 120px;
     height: 120px;
     margin: 5px 5px 0px 5px;
+}
+footer{
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-title{
+    color: var(--principal);
+    margin: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight:bold; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.footer-grupos{
+    width: 80%;
+    align-content: space-around;
+}
+.grupo-logo{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 10px;
 }
 
 /*PARA DESKTOP*/
