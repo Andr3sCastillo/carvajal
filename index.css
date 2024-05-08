@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 header{
@@ -169,6 +169,7 @@ footer{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    margin: 5px 0px;
 }
 .footer-title{
     color: var(--principal);
@@ -181,12 +182,14 @@ footer{
     position: relative;
 }
 .footer-grupos{
-    width: 80%;
+    width: 90%;
     align-content: space-around;
+    text-align: center;
+    margin: 10px 0px;
 }
 .grupo-logo{
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     margin: 2px;
     border-radius: 10px;
 }
