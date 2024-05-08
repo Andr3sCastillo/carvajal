@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 16px;
     font-style: normal;
 }
 html{
@@ -19,8 +19,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-width: 450px;
     width: 100%;
     height: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 header{
     width: 100%;
@@ -133,6 +137,10 @@ button{
     overflow-x: auto;
     white-space: nowrap;
     margin: 5px 0px 0px 10px;
+    scrollbar-width: none;
+}
+.card-container::-webkit-scrollbar {
+    display: none;
 }
 .card{
     color: white;
@@ -156,7 +164,7 @@ button{
 #scroll-derecha {
     width: 25px;
     height: 50px;
-    right: 5px;
+    right: min(5px, 100% - 450px);
     position: absolute;
     top: 432px;
     transform: translateY(-50%);
@@ -192,7 +200,7 @@ footer{
 }
 .footer-title{
     color: var(--principal);
-    margin: 5px;
+    margin: 15px 0px 5px 0px;
     text-align: center;
     font-size: 2rem;
     font-style: italic;
