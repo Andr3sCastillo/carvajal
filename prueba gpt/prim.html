@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./prim.css">
+    <link rel="stylesheet" href="prim.js">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="fila">
+          <!-- Aquí van tus objetos -->
+          <div class="objeto">Objeto 1</div>
+          <div class="objeto">Objeto 2</div>
+          <div class="objeto">Objeto 3</div>
+          <div class="objeto">Objeto 1</div>
+          <div class="objeto">Objeto 2</div>
+          <div class="objeto">Objeto 3</div>
+          <div class="objeto">Objeto 1</div>
+          <div class="objeto">Objeto 2</div>
+          <div class="objeto">Objeto 3</div>
+          <!-- Agrega más objetos según sea necesario -->
+        </div>
+      </div>
+      <button id="scroll-izquierda">◀</button>
+      <button id="scroll-derecha">▶</button>
+      <script>
+            document.getElementById('scroll-izquierda').addEventListener('click', function() {
+            document.querySelector('.contenedor').scrollBy({
+            left: -120, // Valor del scroll hacia la izquierda (ajusta según sea necesario)
+            behavior: 'smooth'
+            });
+            });
+
+            document.getElementById('scroll-derecha').addEventListener('click', function() {
+            document.querySelector('.contenedor').scrollBy({
+                left: 120, // Valor del scroll hacia la derecha (ajusta según sea necesario)
+                behavior: 'smooth'
+            });
+            }); 
+
+      </script>
+</body>
+</html>

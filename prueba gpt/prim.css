@@ -1,0 +1,31 @@
+.contenedor {
+    width: 300px; /* Ancho del contenedor */
+    overflow-x: auto; /* Habilitar el scroll horizontal */
+    white-space: nowrap; /* Evitar que los objetos se envuelvan a la siguiente línea */
+  }
+  
+  .fila {
+    display: inline-flex; /* Mostrar los objetos en una fila */
+  }
+  
+  .objeto {
+    width: 100px; /* Ancho de cada objeto */
+    height: 100px; /* Altura de cada objeto */
+    background-color: #ccc; /* Color de fondo de los objetos (puedes personalizarlo) */
+    margin-right: 10px; /* Espacio entre objetos (puedes ajustarlo según sea necesario) */
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #scroll-izquierda {
+    left: 10px;
+  }
+  
+  #scroll-derecha {
+    right: 10px;
+  }
+  

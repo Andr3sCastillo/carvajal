@@ -36,7 +36,7 @@ header{
 .header-red{
     width: 20%;
     align-self: center;
-    margin: 8px;
+    margin: 8px 10px;
 }
 a{
     display: inline-flex;
@@ -126,24 +126,11 @@ button{
     top: 390px;
     left: -15px;
 }
-.card-flag-right{
-    width: 30px;
-    height: 100px;
-    align-self: center;
-    opacity: 80%;
-    position: absolute;
-    top: 390px;
-    right: 15px ;
-}
-.card-arrow-left{
-    width: 50px;
-    height: 50px;
-}
 .card-container{
     width: 95%;
     height: 200px;
     display: inline-flex;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     margin: 5px 0px 0px 10px;
 }
@@ -157,11 +144,29 @@ button{
     justify-content: center;
     margin: 8px;
 }
+#scroll-izquierda {
+    width: 25px;
+    height: 50px;
+    left: 5px;
+    position: absolute;
+    top: 432px;
+    transform: translateY(-50%);
+    text-align:center;
+}
+#scroll-derecha {
+    width: 25px;
+    height: 50px;
+    right: 5px;
+    position: absolute;
+    top: 432px;
+    transform: translateY(-50%);
+}
 .card-icon{
     width: 120px;
     height: 120px;
     margin: 5px 5px 0px 5px;
 }
+/*FOOTER*/
 footer{
     width: 100%;
     min-width: 300px;
@@ -170,6 +175,20 @@ footer{
     flex-direction: column;
     align-items: center;
     margin: 5px 0px;
+}
+.footer-banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0px;
+}
+.footer-banner-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+
 }
 .footer-title{
     color: var(--principal);
