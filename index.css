@@ -169,6 +169,20 @@ button{
     top: 432px;
     transform: translateY(-50%);
 }
+.scroll-img-l{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    right: 1px;
+}
+.scroll-img-r{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    right: 3px;
+}
 .card-icon{
     width: 120px;
     height: 120px;
