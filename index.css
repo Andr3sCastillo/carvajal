@@ -19,8 +19,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 450px;
     width: 100%;
+    min-width: 450px;
     height: auto;
 }
 body::-webkit-scrollbar {
